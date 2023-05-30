@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--타임리프 사용법 > 기본 html에 속성을 추가한다-->
+<!--  <html lang="en" xmlns:th="http://www.thymeleaf.org">    -->
+<h2>model1 입니당</h2>
+
+
+<p>${param1}</p>
+<!--ㄴ 불러오기 불가능-->
+
+<p>[[${param1}]]</p>
+<p th:text="${param1}"></p>
+<!--ㄴ innerHTML 처럼 값이 표현됨 > 주로 th:text 사용-->
+<h2 th:text="${param2}"></h2>
+
+</body>
+</html>

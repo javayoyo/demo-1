@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>model2 입니당</h2>
+<p th:text="${nation.name}"></p>
+<!--<p th:text="${nation.name}">나라이름</p>-->
+<!--ㄴ 덮어쓰기 형식으로 나라이름 은 출력되지 않고 해당 나라.이름값만 출력됨 -->
+
+<p th:text="${nation.capital}"></p>
+<p th:text="${nation.population}"></p>
+
+</body>
+</html>
